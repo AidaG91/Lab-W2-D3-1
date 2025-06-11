@@ -1,0 +1,25 @@
+.bomb-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.bomb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.bomb.hover {
+  opacity: 0;
+}
+
+.bomb-container:hover .hover {
+  opacity: 1;
+}
+
+.bomb-container:hover .default {
+  opacity: 0;
+}
